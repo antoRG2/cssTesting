@@ -1,0 +1,29 @@
+#rectangle
+{
+  border: solid gray;
+  width: 300px;
+  height:300px;
+  margin: 0 auto;
+ // border-radius: 1px;
+  box-shadow: 10px 5px 5px gray;
+  
+  animation: fadeinphoto 3s 0s 0; 
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes fadeinphoto {
+    0% {  border-radius: 5px; }
+    25%{  border-radius: 50%; }
+    50% {  border-radius: 100%; }
+    75% {  border-radius: 50%; }
+   100% {  border-radius: 5px; }
+}
+
+
+/*
+#rectangle:hover {
+  border-radius:100px;
+   transition: 1s ease-in-out;
+  animation-iteration-count:infinite;
+}*/
