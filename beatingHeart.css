@@ -1,0 +1,70 @@
+#content{
+	position:relative;	
+    width: 100px;
+    height: 90px;
+}
+
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 50px;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+	
+}
+
+#heart:after {
+    left: 50px;
+	
+		/*animation: beating 3s 0s 0; 
+    animation-iteration-count:infinite;*/
+	
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+
+}
+
+#heart{
+	width: 100px;
+    height: 90px;
+	
+	animation: beating 1s 0s 0; 
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes beating {
+    0% {
+    -webkit-transform: scale(1.1);
+ }
+ 50% {
+    -webkit-transform: scale(0.8);
+ }
+ 100% {
+    -webkit-transform: scale(1.1);
+ }
+
+}
